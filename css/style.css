@@ -31,4 +31,5 @@ body {
 /* Sedikit jarak antar kartu artikel biar gak terlalu mepet ke tepi kartu */
 .card-body {
   padding: 1.5rem;
+  
 }
