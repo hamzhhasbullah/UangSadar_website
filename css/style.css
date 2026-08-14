@@ -17,7 +17,8 @@ body {
    Cuma berlaku ke elemen yang PUNYA class="hero" di HTML-nya.
    Class ini yang paling sering dipakai karena bisa ditempel ke banyak elemen sekaligus. */
 .hero {
-  background-color: #f5f2ea;
+  background-color: #fafa02;
+
 }
 
 /* 3. ID SELECTOR (pakai tanda pagar "#")
