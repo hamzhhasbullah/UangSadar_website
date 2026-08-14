@@ -1,24 +1,45 @@
+<!-- Nama Kelompok:
+ 1. Hamjah
+ 2. Arif Surya
+ 3. Revina
+ 4. Ammar
+ 5. Aristo -->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dana Darurat - UangSadar</title>
+  <title>Kenapa Dana Darurat Harus Duluan Sebelum Investasi - UangSadar</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="../index.html">UangSadar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
+      <a class="navbar-brand fw-bold text-dark fs-4" href="../index.html">
+        Uang<span class="text-primary">Sadar</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menuUtama">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto gap-lg-3 fw-medium">
           <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link active" href="dana-darurat.html">Artikel</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary" href="dana-darurat.html">Artikel</a></li>
           <li class="nav-item"><a class="nav-link" href="../tutorial.html">Tutorial</a></li>
           <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang</a></li>
         </ul>
@@ -26,42 +47,170 @@
     </div>
   </nav>
 
-  <main class="container py-5" style="max-width:720px;">
+  <!-- ============ MAIN ARTICLE CONTENT ============ -->
+  <main class="container py-5">
+    <div class="article-wrapper">
 
-    <h1>Kenapa Dana Darurat Harus Duluan Sebelum Investasi</h1>
-    <p class="text-secondary small">[14/08/2026 / Ammar H.A.]</p>
+      <!-- Breadcrumb -->
+      <nav class="custom-breadcrumb" aria-label="breadcrumb">
+        <a href="../index.html">Beranda</a>
+        <span class="separator">/</span>
+        <a href="../index.html#artikel">Artikel</a>
+        <span class="separator">/</span>
+        <span class="current">Dana Darurat</span>
+      </nav>
 
-    <img src="../img/ilustrasi-dana-darurat.png" alt="Ilustrasi dana darurat" class="img-fluid rounded my-4">
+      <!-- Article Header Card -->
+      <article class="card border-0 shadow-sm custom-card p-4 p-md-5 mb-4">
+        <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+          <span class="card-tag bg-danger-subtle text-danger">
+            Penting & Esensial
+          </span>
+          <span class="text-secondary small">&bull; Waktu Baca: ~3 Menit</span>
+        </div>
 
-    <p>Banyak orang seringkali berpikir bahwa investasi adalah cara terbaik untuk membuat uang bertambah, namun mereka sering kali mengabaikan pentingnya memiliki dana darurat terlebih dahulu. padahal manfaat dari dana darurat juga tidak kalah penting.</p>
+        <h1 class="display-6 fw-bold text-dark mb-3">
+          Kenapa Dana Darurat Harus Disiapkan Sebelum Mulai Investasi
+        </h1>
 
-    <h2>Apa sih dana darurat itu?</h2>
-    <p>Dana Darurat merupakan dana yang disisipkan untuk menangani situasi darurat, seperti pada saat kita mengalami kehilangan pekerjaan, menderita sakit yang membatasi aktiVitas, atau menghadapi musibah lainnya yang tidak terduga.</p>
+        <div class="d-flex align-items-center gap-3 pb-3 mb-4 border-bottom text-secondary small">
+          <div>
+            Ditulis oleh: <span class="fw-semibold text-dark">Ammar & Tim UangSadar</span>
+          </div>
+          <div>&bull;</div>
+          <div>14 Agustus 2026</div>
+        </div>
 
-    <h2>Berapa besaran idealnya?</h2>
-    <p>Besaran ideal dari dana darurat biasanya berkisar antara 3 hingga 12 bulan pengeluaran bulanan, tergantung pada kondisi pribadi dan situasi finansial.</p>
-    <ul>
-      <li>Single, gak ada tanggungan: 3x pengeluaran bulanan</li>
-      <li>Menikah, belum ada anak: 6x pengeluaran bulanan</li>
-      <li>Menikah + anak / freelance: 9-12x pengeluaran bulanan</li>
-    </ul>
+        <!-- Featured Image -->
+        <div class="mb-4">
+          <img src="../img/ilustrasi-dana-darurat.png" alt="Ilustrasi dana darurat sebagai pelindung finansial" class="img-fluid rounded-4 shadow-sm w-100">
+          <p class="text-muted small mt-2 text-center fst-italic">Dana darurat ibarat airbag kendaraan yang menyelamatkan kita saat kondisi darurat datang tiba-tiba.</p>
+        </div>
 
-    <h2>Di mana sebaiknya disimpan?</h2>
-    <p>Dana darurat sebaiknya disimpan di rekening tabungan atau instrumen likuid lainnya yang mudah diakses namun tidak terlalu menggoda untuk digunakan untuk keperluan non-darurat. Kita dapat menggunakan rekening tabungan berbeda untuk menyimpan dana darurat ini. bukan di reksadana atau saham karena risiko dan volatilitasnya yang belum tentu menguntungkan.</p>
+        <!-- Article Body -->
+        <div class="article-content">
+          <p class="lead text-secondary">
+            Banyak orang seringkali bergegas ingin langsung terjun berinvestasi saham atau instrumen berimbal hasil tinggi. Namun, mereka kerap mengabaikan satu fondasi paling krusial dalam piramida finansial: <strong>Dana Darurat</strong>.
+          </p>
 
-    <h2>Kesimpulan</h2>
-    <p>Dana darurat adalah komponen penting dalam manajemen keuangan pribadi. Meskipun investasi memberikan potensi keuntungan jangka panjang, dana darurat memberikan perlindungan finansial yang diperlukan dalam situasi tidak terduga. Oleh karena itu, sebaiknya dana darurat disiapkan terlebih dahulu sebelum memulai investasi.</p>
+          <h2>Apa Sih Sebenarnya Dana Darurat Itu?</h2>
+          <p>
+            Dana darurat adalah sejumlah uang tunai atau aset yang sangat likuid yang disimpan khusus untuk mengantisipasi kejadian darurat yang tidak bisa diprediksi. Contohnya meliputi:
+          </p>
+          <ul>
+            <li>Kehilangan pekerjaan atau pemutusan hubungan kerja (PHK).</li>
+            <li>Mengalami sakit mendadak yang memerlukan biaya pengobatan di luar asuransi.</li>
+            <li>Kerusakan mendesak pada kendaraan atau rumah tempat tinggal.</li>
+            <li>Kebutuhan mendesak keluarga inti.</li>
+          </ul>
 
-    <a href="../index.html">&larr; Kembali ke Beranda</a>
+          <div class="callout-box">
+            <h4 class="h6 fw-bold text-primary mb-1">Mengapa Bukan Investasi Dulu?</h4>
+            <p class="mb-0 small">
+              Jika kamu menaruh seluruh tabungan di instrumen investasi (seperti saham) dan tiba-tiba mengalami musibah saat pasar sedang anjlok (*bearish*), kamu terpaksa menjual rugi (*cut loss*) asetmu demi bertahan hidup. Dana darurat mencegah hal tersebut terjadi.
+            </p>
+          </div>
 
+          <h2>Berapa Besaran Ideal Dana Darurat?</h2>
+          <p>
+            Besaran dana darurat dihitung berdasarkan <strong>total pengeluaran bulanan</strong> (bukan gaji kotor). Berikut pedoman umum yang direkomendasikan perencana keuangan:
+          </p>
+
+          <div class="row g-3 my-2">
+            <div class="col-md-4">
+              <div class="p-3 rounded-3 bg-light border text-center h-100">
+                <span class="badge bg-primary px-3 py-1 rounded-pill mb-2">3x Pengeluaran</span>
+                <h4 class="h6 fw-bold mb-1 text-dark">Lajang (Single)</h4>
+                <p class="text-secondary small mb-0">Belum ada tanggungan cicilan besar atau keluarga.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 rounded-3 bg-light border text-center h-100">
+                <span class="badge bg-warning text-dark px-3 py-1 rounded-pill mb-2">6x Pengeluaran</span>
+                <h4 class="h6 fw-bold mb-1 text-dark">Menikah</h4>
+                <p class="text-secondary small mb-0">Pasangan baru menikah dan belum memiliki anak.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 rounded-3 bg-light border text-center h-100">
+                <span class="badge bg-danger px-3 py-1 rounded-pill mb-2">9 - 12x Pengeluaran</span>
+                <h4 class="h6 fw-bold mb-1 text-dark">Berkeluarga / Freelance</h4>
+                <p class="text-secondary small mb-0">Memiliki tanggungan anak atau pendapatan fluktuatif.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>Di Mana Sebaiknya Dana Darurat Disimpan?</h2>
+          <p>
+            Tempat penyimpanan dana darurat harus memenuhi prinsip <strong>Likuid</strong> (mudah dicairkan 1x24 jam) dan <strong>Aman</strong> (rendah risiko fluktuasi).
+          </p>
+
+          <div class="table-responsive my-3">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Instrumen Penyimpanan</th>
+                  <th>Tingkat Likuiditas</th>
+                  <th>Kesesuaian</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold">Rekening Bank Terpisah (Tanpa Kartu Debit)</td>
+                  <td>Sangat Cepat (&lt; 5 Menit)</td>
+                  <td><span class="badge bg-success-subtle text-success">Sangat Direkomendasikan</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Reksa Dana Pasar Uang (RDPU)</td>
+                  <td>Cepat (T+1 s.d T+2)</td>
+                  <td><span class="badge bg-success-subtle text-success">Sangat Direkomendasikan</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Emas Batangan Logam Mulia</td>
+                  <td>Menengah (Perlu Dijual Fisik)</td>
+                  <td><span class="badge bg-warning-subtle text-warning-emphasis">Sebagian Saja</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Saham & Kripto</td>
+                  <td>Sangat Fluktuatif</td>
+                  <td><span class="badge bg-danger-subtle text-danger">Tidak Cocok</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Kesimpulan</h2>
+          <p>
+            Dana darurat adalah fondasi benteng pertahanan keuangan pribadi kamu. Sebelum melangkah jauh memikirkan pertumbuhan kekayaan melalui investasi, pastikan kamu sudah memiliki jaring pengaman yang memadai. Tidur pun akan terasa jauh lebih tenang saat fondasi finansial sudah kokoh!
+          </p>
+        </div>
+      </article>
+
+      <!-- Navigation & Related Articles -->
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 pt-2">
+        <a href="spending-cap.html" class="btn-back">
+          &larr; Artikel Sebelumnya
+        </a>
+        <a href="investasi-dasar.html" class="btn btn-outline-primary rounded-3 px-4 py-2">
+          Artikel Berikutnya: Investasi Dasar &rarr;
+        </a>
+      </div>
+
+    </div>
   </main>
 
-  <footer class="border-top py-4 text-center">
-    <p class="text-secondary small mb-0">
-      UangSadar &copy; <span id="tahun"></span>
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-top py-4 bg-light">
+    <div class="container text-center">
+      <p class="text-secondary small mb-0">
+        UangSadar &copy; <span id="tahun"></span> — Dibuat oleh Kelompok (Hamjah, Arif Surya, Revina, Ammar, Aristo)
+      </p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="../js/script.js"></script>
 </body>
 </html>

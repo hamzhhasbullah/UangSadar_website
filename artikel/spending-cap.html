@@ -1,25 +1,45 @@
+<!-- Nama Kelompok:
+ 1. Hamjah
+ 2. Arif Surya
+ 3. Revina
+ 4. Ammar
+ 5. Aristo -->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spending Cap - UangSadar</title>
+  <title>Kenapa Spending Cap Lebih Adil dari 50/30/20 - UangSadar</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR: copy persis dari index.html, link-nya aja yang disesuaikan pakai ../ -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="../index.html">UangSadar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
+      <a class="navbar-brand fw-bold text-dark fs-4" href="../index.html">
+        Uang<span class="text-primary">Sadar</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menuUtama">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto gap-lg-3 fw-medium">
           <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link active" href="spending-cap.html">Artikel</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary" href="spending-cap.html">Artikel</a></li>
           <li class="nav-item"><a class="nav-link" href="../tutorial.html">Tutorial</a></li>
           <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang</a></li>
         </ul>
@@ -27,126 +47,233 @@
     </div>
   </nav>
 
-  <main class="container py-5" style="max-width:720px;">
+  <!-- ============ MAIN ARTICLE CONTENT ============ -->
+  <main class="container py-5">
+    <div class="article-wrapper">
 
-  
-    <h1>Kenapa Spending Cap Lebih Adil dari 50/30/20</h1>
-    <p class="text-secondary small">11 Agustus 2026 / Penulis</p>
+      <!-- Breadcrumb -->
+      <nav class="custom-breadcrumb" aria-label="breadcrumb">
+        <a href="../index.html">Beranda</a>
+        <span class="separator">/</span>
+        <a href="../index.html#artikel">Artikel</a>
+        <span class="separator">/</span>
+        <span class="current">Spending Cap</span>
+      </nav>
 
-        <img src="../img/G1.jpg" alt="Diagram alur spending cap: gaji masuk, dipisah lewat spending cap, nominal tetap ke rekening belanja dan sisanya otomatis ke investasi" class="img-fluid rounded my-4">
-
-    <!-- FUNGSI: <p> = paragraf pembuka, mancing rasa penasaran pembaca -->
-    <p>Bayangkan jika income mu naik menjadi Rp 100 juta per bulan, bagaimana dengan 30% dari gaji tersebut? Apakah masih adil untuk mengeluarkan Rp 30 juta untuk sekedar gaya hidup?
-       Supaya lebih jelas, mari kita bedah dulu dari mana angka 30% itu berasal.
-    </p>
-
-    <!-- FUNGSI: <h2> = sub-judul, mecah artikel jadi bagian-bagian -->
-    <h2>Mari berkenalan dengan cara mengelola keuangan paling terkenal didunia</h2>
-    <p>Tentu kita pernah mendengar ini dimana-mana, yaitu <strong>50/30/20 rules</strong>. Metode budgeting ini adalah metode pengelolaan keuangan pribadi
-      dengan membagi pengeluaran menjadi 3 kategori: kebutuhan, keinginan, dan tabungan/investasi. Angka 50/30/20 ini adalah persentase dari total penghasilan yang dibagi ke dalam 3 kategori tersebut.
-    </p>
-
-    <ul>
-      <li><strong>50% kebutuhan</strong>, meliputi biaya makan, transportasi, dan biaya tetap lainnya yang kita keluarkan</li>
-      <li><strong>30% keinginan</strong>, biaya ini meliputi pengeluaran untuk hiburan, makanan di luar rumah, dan lainnya</li>
-      <li><strong>20% saving/investasi</strong>, yaitu tabungan atau investasi.</li>
-    </ul>
-
-    <h4>Bagaimana jika penghasilan kita naik 10x lipat, apakah gaya hidup kita ikut naik?</h4>
-    
-   <p>Ingat bahwa <strong>kebutuhan hidup</strong> nominalnya relatif tetap, bukan proporsional terhadap gaji.
-    Di sinilah banyak orang salah langkah, begitu penghasilan naik 10x lipat, mereka mengira kebutuhan hidup juga harus ikut melonjak sebesar itu. Padahal biaya makan, transportasi, dan pengeluaran tetap lainnya nyaris tidak berubah signifikan.
-  </p>
-
-  <p>Metode 50/30/20 mungkin masih masuk akal untuk penghasilan menengah. Tapi begitu income naik tajam, porsi 30% itu ikut membengkak jauh melebihi kebutuhan gaya hidup yang sebenarnya, dan di titik ini metode tersebut jadi tidak lagi adil.
-  </p>
-
-<p>Untuk itu, kita perlu pendekatan yang lebih adil, <strong>spending cap</strong>. Sebelum masuk ke metodenya, mari lihat dulu perbandingan antara 30% dari gaji dan nominal kebutuhan hidup yang relatif tetap.
-</p>
-    </p>
-
-  
-    <table class="table table-bordered my-4">
-      <thead>
-        <tr><th>Gaji</th><th>30% "Keinginan"</th><th>Nominal (Rp)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Rp 10.000.000</td><td>30%</td><td>Rp 3.000.000</td></tr>
-        <tr><td>Rp 100.000.000</td><td>30%</td><td>Rp 30.000.000</td></tr>
-      </tbody>
-    </table>
-
-    <h2>Apa itu Spending Cap</h2>
-    <p>
-      <strong>Spending cap</strong> adalah metode pengelolaan keuangan pribadi yang menentukan nominal tetap untuk belanja, bukan persentase dari penghasilan seperti di 50/30/20. Begitu gajian, nominal cap itu dipindahkan ke rekening belanja, dan sisanya, berapa pun jumlahnya langsung dipindahkan ke tabungan atau investasi.
-      Karena yang tetap itu nominal belanjanya, bukan nominal investasinya, porsi investasi otomatis membesar seiring penghasilan naik tanpa perlu menghitung ulang persentase tiap bulan.
-    </p>
-    <p>Pencatatan juga penting, tapi banyak dari kita yang malas mencatat pengeluaran satu per satu. Dengan spending cap, kita gak perlu repot mencatat. Selama masih di dalam batas yang sudah ditentukan, mau dipakai untuk apa pun itu urusan masing-masing.
-    </p>
-
-    <h4>Langkah-langkah menerapkan spending cap</h4>
-    <ol>
-      <li>Pastikan dana darurat aman - (agar tidak mengganggu anggaran cap saat ada kebutuhan mendadak)</li>
-      <li>Tentukan Spending Cap - (Tentukan nominal pas yang wajar untuk semua pengeluaran bulanan)</li>
-      <li>Begitu gajian, pindahkan cap ke rekening belanja</li>
-      <li>Sisa langsung dipindah ke rekening investasi</li>
-    </ol>
-
-    <h4>Yang Perlu Diperhatikan</h4>
-    <p>Spending cap ini bukan solusi ajaib buat semua orang. Kalau penghasilanmu masih pas-pasan buat kebutuhan dasar, 
-      masalahnya bukan soal proporsi 50/30/20 vs spending cap, itu soal kekurangan pendapatan itu sendiri, dan metode 50/30/20 klasik masih relevan sebagai titik awal. 
-      Selain itu, nominal cap yang kamu tentukan sekarang juga perlu ditinjau ulang secara berkala, bisa karena inflasi, pindah kota, menikah, 
-      atau punya anak bisa bikin cap yang dulu pas jadi gak realistis lagi.</p>
-
-    <h2>Kesimpulan</h2>
-    <p>Jawaban dari pertanyaan di awal : tidak, mengeluarkan Rp 30 juta untuk "keinginan" di gaji Rp 100 juta bukan otomatis adil hanya karena angkanya sesuai rumus 50/30/20. 
-      Kebutuhan hidup itu nominalnya relatif tetap. Begitu penghasilan naik signifikan, yang seharusnya membesar itu porsi tabungan dan investasi, bukan gaya hidup. 
-      Spending cap memaksa itu terjadi otomatis, tanpa perlu disiplin ekstra menghitung ulang persentase tiap bulan.</p>
-
-    <h4>Survei Singkat</h4>
-    <p>Sekarang giliran kamu — sistem budgeting apa yang kamu pakai sehari-hari?</p>
-
-    <!-- Form survei -->
-    <form class="mb-4">
-      <div class="mb-3">
-        <label class="form-label d-block">Pilih salah satu:</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="sistemBudget" id="opsi503020" value="50/30/20">
-          <label class="form-check-label" for="opsi503020">50/30/20</label>
+      <!-- Article Header Card -->
+      <article class="card border-0 shadow-sm custom-card p-4 p-md-5 mb-4">
+        <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+          <span class="card-tag bg-warning-subtle text-warning-emphasis">
+            Strategi Keuangan
+          </span>
+          <span class="text-secondary small">&bull; Waktu Baca: ~4 Menit</span>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="sistemBudget" id="opsiCap" value="Spending cap">
-          <label class="form-check-label" for="opsiCap">Spending cap</label>
+
+        <h1 class="display-6 fw-bold text-dark mb-3">
+          Kenapa Spending Cap Lebih Adil dari Pola 50/30/20
+        </h1>
+
+        <div class="d-flex align-items-center gap-3 pb-3 mb-4 border-bottom text-secondary small">
+          <div>
+            Ditulis oleh: <span class="fw-semibold text-dark">Arif Surya & Tim UangSadar</span>
+          </div>
+          <div>&bull;</div>
+          <div>11 Agustus 2026</div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="sistemBudget" id="opsiTidak" value="Tidak pakai sistem">
-          <label class="form-check-label" for="opsiTidak">Gak pakai sistem apa-apa</label>
+
+        <!-- Featured Image -->
+        <div class="mb-4">
+          <img src="../img/G1.jpg" alt="Diagram alur spending cap: gaji masuk, dipisah lewat spending cap, nominal tetap ke rekening belanja dan sisanya otomatis ke investasi" class="img-fluid rounded-4 shadow-sm w-100">
+          <p class="text-muted small mt-2 text-center fst-italic">Ilustrasi alur sistem Spending Cap yang memisahkan rekening kebutuhan operasional dengan tabungan/investasi.</p>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="sistemBudget" id="opsiLainnya" value="Lainnya">
-          <label class="form-check-label" for="opsiLainnya">Lainnya</label>
+
+        <!-- Article Body -->
+        <div class="article-content">
+          <p class="lead text-secondary">
+            Bayangkan jika <em>income</em>-mu naik drastis menjadi Rp100 juta per bulan. Apakah masih masuk akal jika kamu tetap mengalokasikan 30% (Rp30 juta) hanya untuk sekadar pengeluaran gaya hidup atau keinginan?
+          </p>
+
+          <p>
+            Supaya lebih jelas, mari kita bedah terlebih dahulu dari mana asal aturan persentase yang sangat populer di dunia finansial tersebut.
+          </p>
+
+          <h2>Mengenal Aturan Budgeting 50/30/20</h2>
+          <p>
+            Tentu kita sudah sering mendengar metode <strong>50/30/20 rules</strong>. Metode ini membagi total penghasilan bersih bulanan ke dalam tiga pos utama:
+          </p>
+
+          <ul>
+            <li><strong>50% Kebutuhan Pokok (Needs)</strong>: Biaya makan, sewa tempat tinggal, tagihan listrik/air, dan transportasi esensial.</li>
+            <li><strong>30% Keinginan (Wants)</strong>: Hiburan, makan di luar (*dining out*), liburan, dan hobi.</li>
+            <li><strong>20% Tabungan & Investasi (Savings)</strong>: Dana darurat, instrumen pasar uang, saham, atau dana pensiun.</li>
+          </ul>
+
+          <div class="callout-box">
+            <h4 class="h6 fw-bold text-primary mb-1">Pertanyaan Kritis:</h4>
+            <p class="mb-0 small">
+              Bagaimana jika penghasilan kita naik 10 kali lipat? Apakah biaya makan dan kebutuhan hidup kita otomatis menjadi 10 kali lebih mahal?
+            </p>
+          </div>
+
+          <p>
+            Ingat bahwa <strong>kebutuhan hidup dasar memiliki nominal yang relatif tetap</strong>, bukan proporsional terhadap gaji. Di sinilah banyak orang terjebak dalam fenomena <em>lifestyle inflation</em> (inflasi gaya hidup). Begitu gaji bertambah, pengeluaran gaya hidup dipaksa ikut melonjak mengikuti persentase, bukan kebutuhan riil.
+          </p>
+
+          <!-- Perbandingan Tabel -->
+          <h3>Tabel Simulasi: Kenaikan Gaji vs 30% Keinginan</h3>
+          <div class="table-responsive my-3">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Penghasilan Bulanan</th>
+                  <th>Porsi Keinginan (30%)</th>
+                  <th>Nominal per Bulan</th>
+                  <th>Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold">Rp 10.000.000</td>
+                  <td>30%</td>
+                  <td>Rp 3.000.000</td>
+                  <td><span class="badge bg-secondary-subtle text-secondary">Masuk Akal</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Rp 50.000.000</td>
+                  <td>30%</td>
+                  <td>Rp 15.000.000</td>
+                  <td><span class="badge bg-warning-subtle text-warning-emphasis">Mulai Berlebih</span></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Rp 100.000.000</td>
+                  <td>30%</td>
+                  <td>Rp 30.000.000</td>
+                  <td><span class="badge bg-danger-subtle text-danger">Tidak Efisien</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Solusi yang Lebih Adil: Sistem Spending Cap</h2>
+          <p>
+            <strong>Spending Cap</strong> adalah metode pengelolaan keuangan dengan menetapkan <strong>nominal rupiah tetap</strong> untuk total belanja dan pengeluaran bulanan, bukan memakai persentase gaji.
+          </p>
+
+          <p>
+            Begitu gajian masuk, kamu langsung mentransfer nominal <em>cap</em> yang sudah disepakati ke rekening belanja operasional. Sisanya—berapa pun besarnya—langsung dialihkan ke rekening tabungan dan investasi.
+          </p>
+
+          <h3>Langkah Menerapkan Spending Cap:</h3>
+          <div class="mt-3 mb-4">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Pastikan Dana Darurat Sudah Aman</h4>
+                <p class="text-secondary small mb-0">Dana darurat berfungsi sebagai pelindung agar pengeluaran tak terduga tidak merusak anggaran belanja harian.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Tentukan Nominal Cap Bulanan yang Realistis</h4>
+                <p class="text-secondary small mb-0">Hitung total kebutuhan hidup ditambah porsi hiburan wajar dalam angka rupiah tetap (misal: Rp6.000.000/bulan).</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Pisahkan Rekening Bank</h4>
+                <p class="text-secondary small mb-0">Gunakan rekening khusus kartu debit belanja dan rekening khusus tabungan/investasi tanpa kartu debit.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Transfer Otomatis di Hari Gajian</h4>
+                <p class="text-secondary small mb-0">Pindahkan nominal cap ke rekening belanja, sisanya langsung otomatis dikunci ke instrumen investasi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout-box callout-box-warning">
+            <h4 class="h6 fw-bold text-dark mb-1">Catatan Penting:</h4>
+            <p class="mb-0 small text-secondary">
+              Nominal cap perlu ditinjau ulang secara berkala ketika terjadi perubahan fase hidup, seperti menikah, memiliki anak, atau perpindahan domisili kota.
+            </p>
+          </div>
+
+          <h2>Kesimpulan</h2>
+          <p>
+            Kebutuhan hidup nominalnya relatif konstan. Ketika pendapatanmu naik pesat, yang seharusnya membesar adalah porsi tabungan dan investasi, bukan gaya hidup konsumtif semata. Sistem Spending Cap membantu membangun kebiasaan finansial yang tangguh tanpa stres menghitung persentase setiap bulan.
+          </p>
         </div>
+
+        <!-- ============ SURVEY INTERAKTIF ============ -->
+        <div class="mt-5 p-4 rounded-4 bg-light border">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="badge bg-primary-subtle text-primary fw-semibold px-2 py-1 rounded">Survei Singkat</span>
+          </div>
+          <h3 class="h5 fw-bold text-dark mb-2">Sistem budgeting apa yang kamu gunakan saat ini?</h3>
+          <p class="text-secondary small mb-3">Bantu kami memahami kebiasaan finansial pembaca UangSadar:</p>
+
+          <form onsubmit="event.preventDefault(); alert('Terima kasih atas partisipasi Anda!');">
+            <div class="mb-3">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="sistemBudget" id="opsi503020" value="50/30/20" checked>
+                <label class="form-check-label text-dark" for="opsi503020">Metode 50/30/20 klasik</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="sistemBudget" id="opsiCap" value="Spending cap">
+                <label class="form-check-label text-dark" for="opsiCap">Sistem Spending Cap (Nominal Tetap)</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="sistemBudget" id="opsiTidak" value="Tidak pakai sistem">
+                <label class="form-check-label text-dark" for="opsiTidak">Belum memakai sistem tertentu</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="sistemBudget" id="opsiLainnya" value="Lainnya">
+                <label class="form-check-label text-dark" for="opsiLainnya">Metode Lainnya</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="komentarSurvei" class="form-label text-dark small fw-semibold">Alasan atau Pengalaman (Opsional):</label>
+              <textarea class="form-control" id="komentarSurvei" rows="2" placeholder="Ceritakan pengalaman budgeting kamu..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark rounded-3 px-4 py-2 btn-hover-effect">
+              Kirim Jawaban
+            </button>
+          </form>
+        </div>
+
+      </article>
+
+      <!-- Navigation & Related Articles -->
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 pt-2">
+        <a href="../index.html" class="btn-back">
+          &larr; Kembali ke Beranda
+        </a>
+        <a href="dana-darurat.html" class="btn btn-outline-primary rounded-3 px-4 py-2">
+          Artikel Berikutnya: Dana Darurat &rarr;
+        </a>
       </div>
-      <div class="mb-3">
-        <label for="komentarSurvei" class="form-label">Komentar (opsional)</label>
-        <textarea class="form-control" id="komentarSurvei" rows="2" placeholder="Ceritain kenapa kamu pilih itu"></textarea>
-      </div>
-      <button type="submit" class="btn btn-dark">Kirim Jawaban</button>
-    </form>
 
-    <!-- FUNGSI: <a> = link, di sini link internal balik ke beranda -->
-    <a href="../index.html">&larr; Kembali ke Beranda</a>
-
+    </div>
   </main>
 
-  <!-- FOOTER: sama persis kayak index.html -->
-  <footer class="border-top py-4 text-center">
-    <p class="text-secondary small mb-0">
-      UangSadar &copy; <span id="tahun"></span> — Tugas UAS Pemrograman Web I, Kelompok [Isi Nama Kelompok]
-    </p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-top py-4 bg-light">
+    <div class="container text-center">
+      <p class="text-secondary small mb-0">
+        UangSadar &copy; <span id="tahun"></span> — Dibuat oleh Kelompok (Hamjah, Arif Surya, Revina, Ammar, Aristo)
+      </p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="../js/script.js"></script>
 </body>
 </html>

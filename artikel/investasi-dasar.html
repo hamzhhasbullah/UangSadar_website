@@ -1,137 +1,222 @@
+<!-- Nama Kelompok:
+ 1. Hamjah
+ 2. Arif Surya
+ 3. Revina
+ 4. Ammar
+ 5. Aristo -->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Investasi Dasar - UangSadar</title>
+  <title>Kenalan Sama Instrumen Investasi untuk Pemula - UangSadar</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link href="../css/style.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="../index.html">UangSadar</a>
+      <a class="navbar-brand fw-bold text-dark fs-4" href="../index.html">
+        Uang<span class="text-primary">Sadar</span>
+      </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="menuUtama">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="investasi-dasar.html">Artikel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../tutorial.html">Tutorial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../tentang.html">Tentang</a>
-          </li>
+        <ul class="navbar-nav ms-auto gap-lg-3 fw-medium">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary" href="investasi-dasar.html">Artikel</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tutorial.html">Tutorial</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container py-5" style="max-width:720px;">
+  <!-- ============ MAIN ARTICLE CONTENT ============ -->
+  <main class="container py-5">
+    <div class="article-wrapper">
 
-    <h1>Kenalan Sama Instrumen Investasi untuk Pemula</h1>
-    <p class="text-secondary small">14 Agustus 2026 | Penulis</p>
+      <!-- Breadcrumb -->
+      <nav class="custom-breadcrumb" aria-label="breadcrumb">
+        <a href="../index.html">Beranda</a>
+        <span class="separator">/</span>
+        <a href="../index.html#artikel">Artikel</a>
+        <span class="separator">/</span>
+        <span class="current">Investasi Dasar</span>
+      </nav>
 
-    <img src="ilustrasi-investasi.png" alt="Ilustrasi instrumen investasi" class="img-fluid rounded my-4">
+      <!-- Article Header Card -->
+      <article class="card border-0 shadow-sm custom-card p-4 p-md-5 mb-4">
+        <div class="d-flex align-items-center flex-wrap gap-2 mb-3">
+          <span class="card-tag bg-success-subtle text-success">
+            Investasi Pemula
+          </span>
+          <span class="text-secondary small">&bull; Waktu Baca: ~4 Menit</span>
+        </div>
 
-    <p>
-      Setelah dana darurat dan pengaturan pengeluaran sudah mulai berjalan,
-      investasi bisa menjadi langkah berikutnya dalam mengatur keuangan.
-      Investasi dilakukan dengan menempatkan uang atau aset dengan harapan
-      mendapatkan keuntungan atau pertumbuhan nilai di masa depan.
-    </p>
+        <h1 class="display-6 fw-bold text-dark mb-3">
+          Kenalan Sama Instrumen Investasi untuk Pemula
+        </h1>
 
-    <p>
-      Sebelum mulai berinvestasi, penting untuk memahami tujuan keuangan,
-      jangka waktu, dan risiko yang sesuai dengan kemampuan. Setiap instrumen
-      investasi memiliki karakteristik yang berbeda, sehingga pilihan investasi
-      sebaiknya tidak hanya berdasarkan keuntungan yang ditawarkan.
-    </p>
+        <div class="d-flex align-items-center gap-3 pb-3 mb-4 border-bottom text-secondary small">
+          <div>
+            Ditulis oleh: <span class="fw-semibold text-dark">Revina & Tim UangSadar</span>
+          </div>
+          <div>&bull;</div>
+          <div>14 Agustus 2026</div>
+        </div>
 
-    <h2>Instrumen yang Cocok untuk Pemula</h2>
+        <!-- Featured Image -->
+        <div class="mb-4">
+          <img src="../img/G3.jpg" alt="Ilustrasi instrumen investasi untuk pemula" class="img-fluid rounded-4 shadow-sm w-100">
+          <p class="text-muted small mt-2 text-center fst-italic">Memulai langkah investasi awal dengan instrumen yang tepat dan terukur.</p>
+        </div>
 
-    <table class="table table-bordered my-4">
-      <thead>
-        <tr>
-          <th>Instrumen</th>
-          <th>Risiko</th>
-          <th>Cocok untuk</th>
-        </tr>
-      </thead>
+        <!-- Article Body -->
+        <div class="article-content">
+          <p class="lead text-secondary">
+            Setelah pos dana darurat dan pengaturan pengeluaran bulanan sudah berjalan rapi, langkah selanjutnya untuk mengembangkan aset dan melawan inflasi adalah <strong>berinvestasi</strong>.
+          </p>
 
-      <tbody>
-        <tr>
-          <td>Reksa Dana Pasar Uang</td>
-          <td>Rendah</td>
-          <td>Tujuan jangka pendek</td>
-        </tr>
+          <p>
+            Investasi pada hakikatnya adalah proses menempatkan modal ke dalam suatu instrumen dengan harapan nilainya akan bertumbuh atau memberikan imbal hasil di masa depan. Namun sebelum mulai, kamu wajib memahami profil risiko dan tujuan keuanganmu sendiri.
+          </p>
 
-        <tr>
-          <td>Reksa Dana Saham</td>
-          <td>Menengah - tinggi</td>
-          <td>Tujuan jangka panjang</td>
-        </tr>
+          <h2>Prinsip Utama: Risk vs Return</h2>
+          <p>
+            Dalam dunia investasi, berlaku hukum universal: <em>High Risk, High Return; Low Risk, Low Return</em>. Tidak ada instrumen yang memberikan keuntungan spektakuler tanpa risiko yang sepadan. Hindari segala bentuk tawaran investasi bodong yang menjanjikan keuntungan pasti tinggi tanpa risiko.
+          </p>
 
-        <tr>
-          <td>Emas</td>
-          <td>Rendah - menengah</td>
-          <td>Menjaga nilai aset</td>
-        </tr>
+          <h2>Instrumen Investasi Ramah Pemula</h2>
+          <p>
+            Berikut perbandingan beberapa instrumen investasi yang umum dan cocok untuk investor pemula:
+          </p>
 
-        <tr>
-          <td>Saham</td>
-          <td>Tinggi</td>
-          <td>Tujuan jangka panjang</td>
-        </tr>
-      </tbody>
-    </table>
+          <div class="table-responsive my-3">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Instrumen</th>
+                  <th>Tingkat Risiko</th>
+                  <th>Jangka Waktu Ideal</th>
+                  <th>Karakteristik Utama</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold">Reksa Dana Pasar Uang (RDPU)</td>
+                  <td><span class="badge bg-success-subtle text-success">Rendah</span></td>
+                  <td>&lt; 1 Tahun</td>
+                  <td>Stabil, imbal hasil di atas bunga tabungan, bebas pajak.</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Surat Berharga Negara (SBN / ORI / Sukuk)</td>
+                  <td><span class="badge bg-success-subtle text-success">Sangat Rendah</span></td>
+                  <td>2 - 6 Tahun</td>
+                  <td>Dijamin 100% oleh Undang-Undang Republik Indonesia.</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Emas Logam Mulia</td>
+                  <td><span class="badge bg-warning-subtle text-warning-emphasis">Rendah - Menengah</span></td>
+                  <td>&gt; 5 Tahun</td>
+                  <td>Penyimpan nilai (*hedge against inflation*).</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Reksa Dana Saham / Index Fund</td>
+                  <td><span class="badge bg-danger-subtle text-danger">Tinggi</span></td>
+                  <td>&gt; 5 Tahun</td>
+                  <td>Pertumbuhan modal tinggi, cocok untuk tujuan pensiun.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-    <h2>Cara Mulai</h2>
+          <h2>4 Langkah Memulai Investasi Pertama Kamu</h2>
+          <div class="mt-3 mb-4">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Tentukan Tujuan Finansial & Jangka Waktu</h4>
+                <p class="text-secondary small mb-0">Apakah untuk liburan tahun depan (jangka pendek), beli rumah dalam 5 tahun (menengah), atau dana pensiun (panjang)?</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Kenali Profil Risiko Pribadi</h4>
+                <p class="text-secondary small mb-0">Apakah kamu tipe konservatif (tidak tahan melihat nilai portofolio minus), moderat, atau agresif?</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Pilih Platform yang Terdaftar & Diawasi OJK</h4>
+                <p class="text-secondary small mb-0">Pastikan aplikasi investasi atau agen penjual efek memiliki izin resmi dari Otoritas Jasa Keuangan (OJK).</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4 class="h6 fw-bold mb-1">Mulai Rutin (DCA - Dollar Cost Averaging)</h4>
+                <p class="text-secondary small mb-0">Jangan menunggu punya uang ratusan juta. Mulai dari Rp10.000 atau Rp100.000 secara rutin setiap gajian.</p>
+              </div>
+            </div>
+          </div>
 
-    <ol>
-      <li>Tentukan tujuan dan jangka waktu investasi.</li>
-      <li>Pahami risiko dari instrumen yang akan dipilih.</li>
-      <li>Pilih platform investasi yang legal dan terdaftar OJK.</li>
-      <li>Mulai dengan nominal yang sesuai kemampuan.</li>
-    </ol>
+          <div class="callout-box">
+            <h4 class="h6 fw-bold text-primary mb-1">Golden Rule untuk Pemula:</h4>
+            <p class="mb-0 small">
+              Jangan pernah menaruh seluruh telur dalam satu keranjang (*diversifikasi*), dan hanya gunakan <strong>uang dingin</strong> (dana di luar kebutuhan pokok dan dana darurat) untuk berinvestasi.
+            </p>
+          </div>
 
-    <h2>Kesimpulan</h2>
+          <h2>Kesimpulan</h2>
+          <p>
+            Investasi bukan cara cepat untuk kaya dalam semalam, melainkan strategi bertahap untuk menjaga daya beli uang dan mencapai kebebasan finansial jangka panjang. Mulailah secara bertahap dengan instrumen yang kamu pahami dengan baik!
+          </p>
+        </div>
+      </article>
 
-    <p>
-      Investasi dapat membantu seseorang mempersiapkan kebutuhan dan tujuan
-      keuangan di masa depan. Namun, setiap investasi memiliki risiko yang
-      berbeda. Bagi pemula, hal yang paling penting adalah memahami produk
-      investasi sebelum mulai dan menyesuaikannya dengan kondisi keuangan.
-    </p>
+      <!-- Navigation & Related Articles -->
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 pt-2">
+        <a href="dana-darurat.html" class="btn-back">
+          &larr; Artikel Sebelumnya
+        </a>
+        <a href="../tutorial.html" class="btn btn-primary rounded-3 px-4 py-2 btn-hover-effect">
+          Tonton Video Tutorial &rarr;
+        </a>
+      </div>
 
-    <p>
-      Mulailah secara bertahap dan jangan mudah tergiur dengan keuntungan yang
-      terlalu besar. Dengan memahami dasar investasi dan memilih instrumen
-      yang sesuai, pengelolaan keuangan dapat dilakukan dengan lebih bijak.
-    </p>
-
-    <a href="../index.html">&larr; Kembali ke Beranda</a>
-
+    </div>
   </main>
 
-  <footer class="border-top py-4 text-center">
-    <p class="text-secondary small mb-0">
-      UangSadar &copy; <span id="tahun"></span>
-    </p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-top py-4 bg-light">
+    <div class="container text-center">
+      <p class="text-secondary small mb-0">
+        UangSadar &copy; <span id="tahun"></span> — Dibuat oleh Kelompok (Hamjah, Arif Surya, Revina, Ammar, Aristo)
+      </p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="../js/script.js"></script>
-
 </body>
 </html>

@@ -1,64 +1,187 @@
+<!-- Nama Kelompok:
+ 1. Hamjah
+ 2. Arif Surya
+ 3. Revina
+ 4. Ammar
+ 5. Aristo -->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutorial - UangSadar</title>
+  <title>Tutorial & Panduan Praktis - UangSadar</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-semibold" href="index.html">UangSadar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
+      <a class="navbar-brand fw-bold text-dark fs-4" href="index.html">
+        Uang<span class="text-primary">Sadar</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menuUtama">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto gap-lg-3 fw-medium">
           <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="artikel/spending-cap.html">Artikel</a></li>
-          <li class="nav-item"><a class="nav-link active" href="tutorial.html">Tutorial</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary" href="tutorial.html">Tutorial</a></li>
           <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container py-5" style="max-width:720px;">
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header py-5">
+    <div class="container py-3">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-3">
+            Media Pembelajaran
+          </span>
+          <h1 class="display-6 fw-bold mb-3 text-dark">
+            Tutorial & Panduan Praktis
+          </h1>
+          <p class="text-secondary lead fs-6 mb-0" style="max-width: 540px;">
+            Pelajari konsep pengelolaan keuangan pribadi secara visual dan audio melalui materi multimedia terpadu yang mudah dipahami.
+          </p>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block text-end">
+          <div class="page-header-img">
+            <img src="img/G4.jpg" alt="Ilustrasi Tutorial" class="img-fluid rounded-4 shadow-sm" style="max-height: 180px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <h1>Tutorial: Cara Pakai Sistem Spending Cap</h1>
-    <p>[Paragraf pengantar singkat sebelum video]</p>
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="container py-5">
+    <div class="article-wrapper">
 
-    <!-- FUNGSI: <video> = elemen video native HTML.
-         "controls" bikin ada tombol play/pause/volume otomatis.
-         "poster" gambar preview sebelum videonya diputar. -->
-    <video controls poster="img/poster-video.png" class="w-100 rounded my-3">
-      <source src="video/tutorial-spending-cap.mp4" type="video/mp4">
+      <!-- Breadcrumb -->
+      <nav class="custom-breadcrumb" aria-label="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="separator">/</span>
+        <span class="current">Tutorial</span>
+      </nav>
 
-    </video>
+      <!-- Section 1: Video Tutorial -->
+      <section class="card border-0 shadow-sm custom-card p-4 p-md-5 mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge bg-danger-subtle text-danger fw-semibold px-3 py-1 rounded-pill">
+            Video Tutorial
+          </span>
+          <span class="text-secondary small">&bull; Durasi: ~3 Menit</span>
+        </div>
 
-    <h2 class="mt-5">Audio: Ringkasan Tips Singkat</h2>
-    <p>[Paragraf pengantar singkat sebelum audio]</p>
+        <h2 class="h3 fw-bold text-dark mb-3">
+          Tutorial: Cara Pakai Sistem Spending Cap
+        </h2>
+        <p class="text-secondary mb-4">
+          Tonton video panduan langkah demi langkah berikut untuk memahami cara memisahkan rekening belanja, menentukan batas maksimal pengeluaran bulanan, dan membiarkan tabungan/investasi bertambah otomatis saat gajian.
+        </p>
 
-    <!-- FUNGSI: <audio> = elemen audio native HTML. -->
-    <audio controls class="w-100 my-3">
-      <source src="audio/ringkasan-tips.mp3" type="audio/mpeg">
-      Maaf, browser kamu belum mendukung tag audio.
-    </audio>
+        <!-- Video Player Container -->
+        <div class="video-container mb-4">
+          <video controls poster="img/G1.jpg" class="w-100">
+            <source src="video/tutorial-spending-cap.mp4" type="video/mp4">
+            Browser kamu belum mendukung tag video HTML5.
+          </video>
+        </div>
 
-    <a href="index.html">&larr; Kembali ke Beranda</a>
+        <div class="bg-light p-3 rounded-3 border">
+          <h3 class="h6 fw-bold text-dark mb-2">📌 Poin Utama dari Video:</h3>
+          <ul class="text-secondary small mb-0 ps-3">
+            <li>Kunci spending cap: batas belanja nominalnya <strong>tetap</strong>, bukan persentase gaji.</li>
+            <li>Siapkan 2 rekening bank: satu untuk operasional harian, satu untuk tabungan/investasi.</li>
+            <li>Begitu gaji masuk, langsung transfer sebesar nominal cap ke rekening harian.</li>
+          </ul>
+        </div>
+      </section>
 
+      <!-- Section 2: Audio Podcast / Ringkasan -->
+      <section class="card border-0 shadow-sm custom-card p-4 p-md-5 mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge bg-success-subtle text-success fw-semibold px-3 py-1 rounded-pill">
+            Audio Podcast
+          </span>
+          <span class="text-secondary small">&bull; Durasi: ~2 Menit</span>
+        </div>
+
+        <h2 class="h3 fw-bold text-dark mb-3">
+          Audio: Ringkasan Tips Finansial Pemula
+        </h2>
+        <p class="text-secondary mb-4">
+          Dengarkan audio singkat berikut saat santai untuk melatih pola pikir yang sehat seputar uang, menghindari jebakan gaya hidup (*lifestyle inflation*), dan membangun kebiasaan menabung yang konsisten.
+        </p>
+
+        <!-- Audio Player Card -->
+        <div class="audio-player-card mb-4 bg-light-subtle">
+          <div class="d-flex align-items-center gap-3">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; flex-shrink: 0;">
+              🔊
+            </div>
+            <div>
+              <h3 class="h6 fw-bold mb-0 text-dark">Episode 01: Mindset Sadar Finansial</h3>
+              <p class="text-secondary small mb-0">UangSadar Audio Briefing untuk Mahasiswa & Pemula</p>
+            </div>
+          </div>
+          <audio controls class="w-100 mt-3">
+            <source src="audio/ringkasan-tips.mp3" type="audio/mpeg">
+            Maaf, browser kamu belum mendukung tag audio HTML5.
+          </audio>
+        </div>
+
+        <div class="bg-light p-3 rounded-3 border">
+          <h3 class="h6 fw-bold text-dark mb-2">💡 Tips Cepat:</h3>
+          <p class="text-secondary small mb-0">
+            Fokuslah pada pembentukan <strong>kebiasaan</strong> terlebih dahulu sebelum memusingkan instrumen investasi yang rumit. Mulai dari yang kecil, tetapi konsisten setiap bulan.
+          </p>
+        </div>
+      </section>
+
+      <!-- Action Card -->
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 pt-2">
+        <a href="index.html" class="btn-back">
+          &larr; Kembali ke Beranda
+        </a>
+        <a href="artikel/spending-cap.html" class="btn btn-primary rounded-3 px-4 py-2 btn-hover-effect">
+          Baca Artikel Lengkap &rarr;
+        </a>
+      </div>
+
+    </div>
   </main>
 
-  <footer class="border-top py-4 text-center">
-    <p class="text-secondary small mb-0">
-      UangSadar &copy; <span id="tahun"></span> 
-    </p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-top py-4 bg-light">
+    <div class="container text-center">
+      <p class="text-secondary small mb-0">
+        UangSadar &copy; <span id="tahun"></span> — Dibuat oleh Kelompok (Hamjah, Arif Surya, Revina, Ammar, Aristo)
+      </p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="js/script.js"></script>
 </body>
 </html>

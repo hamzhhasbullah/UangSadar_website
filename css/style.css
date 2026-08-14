@@ -1,35 +1,289 @@
-/* ============================================
-   CSS CUSTOM - style.css
-   File ini isinya "dandanan tambahan" di luar Bootstrap.
-   Bootstrap kasih kerangka & warna default, file ini yang bikin
-   situsnya kelihatan beda dari situs Bootstrap generik lainnya.
-   ============================================ */
+/* ======================================================
+   UangSadar - Main Stylesheet
+   Modern, Clean, and Accessible Financial Literacy Design
+   ====================================================== */
 
-/* 1. ELEMENT SELECTOR
-   Menunjuk langsung ke nama tag HTML-nya (di sini: <body>).
-   Berlaku ke SEMUA elemen <body> di halaman ini. */
+/* --- Font & Body Base --- */
 body {
-  font-family: "Segoe UI", sans-serif;
-  text-align: justify;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #2b2f33;
+  background-color: #f8f9fa;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 2. CLASS SELECTOR (pakai tanda titik ".")
-   Cuma berlaku ke elemen yang PUNYA class="hero" di HTML-nya.
-   Class ini yang paling sering dipakai karena bisa ditempel ke banyak elemen sekaligus. */
-.hero {
-  background-color: #fafa02;
-
+/* --- Hero & Page Header Section --- */
+.hero,
+.page-header {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* 3. ID SELECTOR (pakai tanda pagar "#")
-   Cuma berlaku ke SATU elemen yang id="tahun".
-   Beda sama class: id itu harus unik, cuma boleh dipakai 1 kali per halaman. */
-#tahun {
+.hero-img-wrapper img,
+.page-header-img img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img-wrapper img:hover,
+.page-header-img img:hover {
+  transform: scale(1.02);
+}
+
+/* --- Buttons & Links --- */
+.btn-hover-effect {
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12) !important;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 600;
+  text-decoration: none;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease;
 }
 
-/* Sedikit jarak antar kartu artikel biar gak terlalu mepet ke tepi kartu */
-.card-body {
+.btn-back:hover {
+  background-color: #212529;
+  color: #ffffff;
+  border-color: #212529;
+  transform: translateX(-4px);
+}
+
+/* --- Cards --- */
+.custom-card {
+  transition: all 0.3s ease;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Card Badge Tag */
+.card-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+/* --- Article & Content Layout --- */
+.article-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.article-content {
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.article-content h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+.article-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-content p {
+  margin-bottom: 1.25rem;
+}
+
+.article-content ul, 
+.article-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.35rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Callout Box */
+.callout-box {
+  background-color: #f0f7ff;
+  border-left: 4px solid #0d6efd;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 10px 10px 0;
+  margin: 1.5rem 0;
+}
+
+.callout-box-warning {
+  background-color: #fffbeb;
+  border-left: 4px solid #f59e0b;
+}
+
+/* --- Media Players (Video & Audio) --- */
+.video-container {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: #000;
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+.audio-player-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e9ecef;
   padding: 1.5rem;
-  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.audio-player-card audio {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.75rem;
+}
+
+/* --- Modern Table Styling --- */
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.custom-table thead th {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.custom-table tbody td {
+  padding: 0.85rem 1rem;
+  font-size: 0.925rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.custom-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* --- Step List Styling --- */
+.step-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+/* --- Team Avatar & Badge --- */
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd 0%, #0099ff 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.35rem;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
+}
+
+/* --- Breadcrumb Custom --- */
+.custom-breadcrumb {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.custom-breadcrumb a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.custom-breadcrumb a:hover {
+  color: #0d6efd;
+}
+
+.custom-breadcrumb .separator {
+  margin: 0 0.5rem;
+  color: #adb5bd;
+}
+
+.custom-breadcrumb .current {
+  color: #212529;
+  font-weight: 500;
 }
